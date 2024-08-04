@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Switch } from "@sedna-ui";
+import { Switch } from "../lib/main";
 
 function App() {
   const [checked, setCecked] = useState<boolean>(false);
