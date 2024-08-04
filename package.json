@@ -1,13 +1,21 @@
 {
   "name": "sedna-ui",
-  "private": true,
-  "version": "0.0.0",
+  "private": false,
+  "version": "0.0.2",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/garethlegrange/sedna-ui.git"
+  },
   "type": "module",
+  "license": "MIT",
+  "author": "Gareth le Grange",
+  "description": "A React component library",
   "files": [
     "dist"
   ],
   "main": "./dist/sedna-ui.umd.cjs",
   "module": "./dist/sedna-ui.js",
+  "types": "./dist/sedna-ui.d.ts",
   "exports": {
     ".": {
       "import": "./dist/sedna-ui.js",
