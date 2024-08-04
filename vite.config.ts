@@ -11,6 +11,8 @@ export default defineConfig({
     react(),
     dts({
       include: ["lib"],
+      exclude: ["**/*.stories.tsx", "src", "**/*.test.tsx"],
+      insertTypesEntry: true,
     }),
     tsconfigPaths(),
     libInjectCss(),
