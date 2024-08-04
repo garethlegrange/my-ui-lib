@@ -21,13 +21,13 @@ export default defineConfig({
     lib: {
       formats: ["es"],
       // Could also be a dictionary or array of multiple entry points
-      // entry: resolve(__dirname, "lib/main.ts"),
-      entry: {
-        main: resolve(__dirname, "lib/main.ts"),
-        button: "lib/components/button/index.tsx",
-        switch: "lib/components/switch/index.tsx",
-      },
-      name: "SednaUI",
+      entry: resolve(__dirname, "lib/main.ts"),
+      // entry: {
+      //   main: resolve(__dirname, "lib/main.ts"),
+      //   button: "lib/components/button/index.tsx",
+      //   switch: "lib/components/switch/index.tsx",
+      // },
+      name: "sedna-ui",
       // the proper extensions will be added
       fileName: "sedna-ui",
     },
@@ -37,10 +37,10 @@ export default defineConfig({
       external: ["react", "react-dom", "react/jsx-runtime"],
       output: {
         // Put chunk files at <output>/chunks
-        chunkFileNames: "chunks/[name].[hash].js",
+        // chunkFileNames: "chunks/[name].[hash].js",
         // Put chunk styles at <output>/assets
-        assetFileNames: "assets/[name][extname]",
-        entryFileNames: "[name].js",
+        // assetFileNames: "assets/[name][extname]",
+        // entryFileNames: "[name].js",
         // Provide global variables to use in the UMD build
         // for externalized deps
         globals: {
