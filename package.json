@@ -1,13 +1,23 @@
 {
   "name": "sedna-ui",
   "private": false,
-  "version": "0.0.8",
+  "version": "0.1.0",
   "type": "module",
-  "main": "dist/sedna-ui.js",
-  "types": "dist/main.d.ts",
   "files": [
     "dist"
   ],
+  "main": "./dist/main.umd.cjs",
+  "types": "./dist/main.d.ts",
+  "module": "./dist/main.js",
+  "exports": {
+    ".": {
+      "import": "./dist/main.js",
+      "require": "./dist/main.umd.cjs"
+    }
+  },
+  "license": "MIT",
+  "repository": "https://github.com/garethlegrange/sedna-ui",
+  "description": "Sedma UI components for component library demo",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -15,7 +25,7 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "prepublish": "npm run build"
+    "prepublishOnly": "npm run build"
   },
   "peerDependencies": {
     "react": "^18.3.1",
@@ -43,7 +53,10 @@
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
     "eslint-plugin-storybook": "^0.8.0",
+    "glob": "^7.2.3",
     "postcss": "^8.4.40",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "storybook": "^8.2.7",
     "tailwindcss": "^3.4.7",
     "typescript": "^5.2.2",

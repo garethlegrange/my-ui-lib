@@ -1,4 +1,6 @@
 import "./index.css";
 
-export { Button } from "./components/Button";
-export { Switch } from "./components/Switch";
+import { Button } from "./components/Button";
+import { Switch } from "./components/Switch";
+
+export { Button, Switch };

@@ -1,15 +1,15 @@
 # Sedna UI
 
-This UI library is built with [React](https://reactjs.org/) and [TypeScript](https://www.typescriptlang.org/). It is designed to be used with [Vite](https://vitejs.dev/), a modern build tool that serves your code via native ES modules.
+This UI library is built with [Vite](https://vitejs.dev/), [React](https://reactjs.org/) and [TypeScript](https://www.typescriptlang.org/).
 
 It uses [Tailwind CSS](https://tailwindcss.com/) for styling.
 
 ## Usage
 
 ```bash
-npm install sedna-ui
+npm install sedna-ui@latest
 ```
 
 ```tsx
-import { Button } from "sedna-ui";
+import { Switch } from "sedna-ui";
 ```
