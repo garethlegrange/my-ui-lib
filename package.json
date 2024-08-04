@@ -1,7 +1,7 @@
 {
   "name": "sedna-ui",
   "private": false,
-  "version": "0.0.2",
+  "version": "0.0.4",
   "repository": {
     "type": "git",
     "url": "https://github.com/garethlegrange/sedna-ui.git"
@@ -12,6 +12,9 @@
   "description": "A React component library",
   "files": [
     "dist"
+  ],
+  "sideEffects": [
+    "**/*.css"
   ],
   "main": "./dist/sedna-ui.umd.cjs",
   "module": "./dist/sedna-ui.js",
@@ -28,7 +31,8 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "prepublishOnly": "npm run build"
   },
   "peerDependencies": {
     "react": "^18.3.1",

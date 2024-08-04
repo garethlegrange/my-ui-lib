@@ -32,7 +32,7 @@ export default defineConfig({
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled
       // into your library
-      external: ["react", "react-dom"],
+      external: ["react", "react-dom", "react/jsx-runtime"],
       output: {
         // Put chunk files at <output>/chunks
         chunkFileNames: "chunks/[name].[hash].js",
@@ -44,6 +44,7 @@ export default defineConfig({
         globals: {
           react: "React",
           "react-dom": "ReactDOM",
+          "react/jsx-runtime": "react/jsx-runtime",
         },
       },
     },
