@@ -16,7 +16,10 @@
     }
   },
   "license": "MIT",
-  "repository": "https://github.com/garethlegrange/sedna-ui",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garethlegrange/sedna-ui.git"
+  },
   "description": "Sedma UI components for component library demo",
   "scripts": {
     "dev": "vite",
@@ -25,7 +28,8 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "chromatic": "npx chromatic --project-token=chpt_1f1491914abf554"
   },
   "peerDependencies": {
     "react": "^18.3.1",
@@ -48,6 +52,7 @@
     "@typescript-eslint/parser": "^7.15.0",
     "@vitejs/plugin-react": "^4.3.1",
     "autoprefixer": "^10.4.20",
+    "chromatic": "^11.7.0",
     "clsx": "^2.1.1",
     "eslint": "^8.57.0",
     "eslint-plugin-react-hooks": "^4.6.2",
@@ -63,5 +68,9 @@
     "vite": "^5.3.4",
     "vite-plugin-dts": "^4.0.0-beta.2",
     "vite-plugin-lib-inject-css": "^2.1.1"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/garethlegrange/sedna-ui/issues"
+  },
+  "homepage": "https://github.com/garethlegrange/sedna-ui#readme"
 }

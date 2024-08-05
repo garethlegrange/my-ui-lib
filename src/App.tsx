@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Switch } from "../lib/main";
 
 function App() {
-  const [checked, setCecked] = useState<boolean>(false);
+  const [checked, setChecked] = useState<boolean>(false);
 
   return (
     <div
@@ -16,7 +16,7 @@ function App() {
       }}
     >
       <div>
-        <Switch checked={checked} onChange={setCecked} />
+        <Switch checked={checked} onChange={setChecked} />
       </div>
     </div>
   );
